@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">    
+    
+
+    <title>Crystal Collector Game</title>
+</head>
+<body>
+    <!--1st Row-->
+    <div class="row height= 50px">
+        <div class="col-md-4">
+            <h1 id = header>Crystall Collector</h1>
+        </div>
+        <div class="col-md-8"></div>        
+    </div>
+    
+    <!--2nd Row-->
+    <div class="row">
+        <div id="game_rule" class="col-md-7" style="margin-left:15px;">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystal ball below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you loss the game if your total score goes above the random number.</p>
+            <p>THe value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the value of each crystal</p>
+        </div>
+        <div class="col-md-5"></div>
+    </div>
+    
+    <!--3rd Row-->
+    <div class="row">
+        <div id="scoreBoard" class="col-md-4">   
+                <h3>Your number is here</h3>         
+            <span id="scoreText"></span>
+        </div>
+        <div class="col-md-2" style="padding-left:0">
+            <div id="winScore" class="row">
+                <h4 id="scoreText">Win Count:</h4>
+            </div>
+            <div id="lossScore" class="row">
+                    <h4 id="scoreText">Loss Count:</h4>
+            </div>
+        </div>
+        <div class="col-md-5"></div>
+    </div>
+    
+    <!--4th Row-->
+    <div class="row">
+        <div class="col-md-10">
+            <img src="assets/images/image1.png" class="crystal_img" id="redGem">
+            <img src="assets/images/image2.png" class="crystal_img" id="blueGem">
+            <img src="assets/images/image3.png" class="crystal_img" id="greenGem">
+            <img src="assets/images/image4.png" class="crystal_img" id="yellowGem">
+            <img src="assets/images/reset-button.jpg" class="reset_img" id="gameReset">
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    
+    <!--5th Row-->
+    <div class="row">
+        <div class="col-md-4" style="background:#45B8AC; margin-left:15px; padding-left:15px"><h4>Your target number is</h4></div>
+        <div class="col-md-8"></div>
+    </div>
+    
+    <!--6th Row-->
+    <div class="row">
+        <div class="col-md-4">
+            <p id="totalScore">0</p>
+        </div>
+        <div class="col-md-8"></div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
