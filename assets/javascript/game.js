@@ -2,16 +2,8 @@
 var blueArray = [10,15,20];
 var greenArray = [25,30];
 var myNum = 0;
-var clickNum = [1,2,3,4]
-// var redClick = clickNum[Math.floor(Math.random()*clickNum.length)];
-// var blueClick = clickNum[Math.floor(Math.random()*clickNum.length)];
-// var greenClick = clickNum[Math.floor(Math.random()*clickNum.length)];
-// var yellowClick = clickNum[Math.floor(Math.random()*clickNum.length)];
-// var redGemNum = Math.floor((Math.random()*10)+1);
-// var blueGemNum = blueArray[Math.floor(Math.random()*blueArray.length)];
-// var greenGemNum = greenArray[Math.floor(Math.random()*greenArray.length)];
-// var yellowGemNum = Math.floor((Math.random()*10)*15);
-// var targetNum = redGemNum*redClick + blueGemNum*blueClick + greenGemNum*greenClick + yellowGemNum*yellowClick;
+var clickNum = [1,2,3,4,5]
+
 var winCount = 0;
 var lossCount = 0;
 
@@ -25,20 +17,20 @@ yellowClick = clickNum[Math.floor(Math.random()*clickNum.length)];
 redGemNum = Math.floor(Math.random()*10+1);
 blueGemNum = Math.floor(Math.random()*20+5);
 greenGemNum = greenArray[Math.floor(Math.random()*greenArray.length)];
-yellowGemNum = (Math.floor(Math.random()*20+5)*5);
+yellowGemNum = (Math.floor(Math.random()*20+5)*5+1);
 targetNum = redGemNum*redClick + blueGemNum*blueClick + greenGemNum*greenClick + yellowGemNum*yellowClick;
 }
 numReset();
 
-console.log(redGemNum);
-console.log(redClick);
-console.log(blueGemNum);
-console.log(blueClick);
-console.log(greenGemNum);
-console.log(greenClick);
-console.log(yellowGemNum);
-console.log(yellowClick);
-console.log(targetNum);
+// console.log(redGemNum);
+// console.log(redClick);
+// console.log(blueGemNum);
+// console.log(blueClick);
+// console.log(greenGemNum);
+// console.log(greenClick);
+// console.log(yellowGemNum);
+// console.log(yellowClick);
+// console.log(targetNum);
 
 //Gem click function
 
@@ -67,23 +59,23 @@ $("#totalScore").html(targetNum);
     $("#scoreBoard").html(myNum);
     
     targetNumcal();
-    // console.log(targetNum);
-    // console.log(myNum);
+    console.log(targetNum);
+    console.log("my number"+myNum);
   });
 
   $("#gameReset").on("click", function() {  
     numReset();        
   $("#scoreBoard").html("Your number is here");
   $("#totalScore").html(targetNum);
-  console.log(redGemNum);
-  console.log(redClick);
-  console.log(blueGemNum);
-  console.log(blueClick);
-  console.log(greenGemNum);
-  console.log(greenClick);
-  console.log(yellowGemNum);
-  console.log(yellowClick);
-  console.log(targetNum);
+  // console.log(redGemNum);
+  // console.log(redClick);
+  // console.log(blueGemNum);
+  // console.log(blueClick);
+  // console.log(greenGemNum);
+  // console.log(greenClick);
+  // console.log(yellowGemNum);
+  // console.log(yellowClick);
+  // console.log(targetNum);
   
   });
 
@@ -93,7 +85,7 @@ function targetNumcal(){
 if (myNum === targetNum){
   
     winCount = winCount + 1;
-    $("#winScore").html("<h4>Win Count:</43>" + winCount);
+    $("#winScore").html("<h4>Win Count:</h4>" + winCount);
     $("#scoreBoard").html("Congrat! You Won!!");
     numReset();
   }
