@@ -10,6 +10,16 @@ This game is to design given a random number at the start of the game. There are
 * Math.random
 * .addClass()
 * .before()
+* .card class
+* .empty()
+* .append()
+* Transparent RGBA
+* $(document).on('click')
+* @media on screen
 * Responsive
+
+## Project Link
+
+https://wenhaowu27.github.io/unit-4-game/
 
 ![Crystal Collector](./assets/images/CrystallCollectionGuessingGame.jpg)
