@@ -80,15 +80,15 @@ header {
         font-size: 2em;
     }
     .crystal_img {
-        width:60px;
-        height:60px;
-        margin:15px 15px;
+        width:70px;
+        height:70px;
+        margin:10px 10px;
      }
     .card {
-        width:60px;
-        height:60px;
-        margin:15px 15px;
-        font-size: 1.5em;
+        width:70px;
+        height:70px;
+        margin:10px 10px;
+        font-size: 1.15em;
      }
   }
 
@@ -98,15 +98,15 @@ header {
         font-size: 1.5em;
     }
     .crystal_img {
-        width:50px;
-        height:50px;
+        width:60px;
+        height:60px;
         margin: 10px 10px;
      }
      .card {
-        width:50px;
-        height:50px;
+        width:60px;
+        height:60px;
         margin: 10px 10px;
-        font-size: .5em;
+        font-size: 1em;
      }
   }
   
