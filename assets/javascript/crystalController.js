@@ -87,12 +87,13 @@ $( document ).ready(function() {
   
   $(document).on("click", ".crystal_img",function() {   
       var crystalValue = ($(this).attr("data-crystalvalue"));
+      console.log(crystalValue);
       crystalValue = parseInt(crystalValue);
       myNum += crystalValue
   
       // All of the same game win-lose logic applies. So the rest remains unchanged.
-      $('#number-to-guess').text(myNum)
-      $('#num_u_clicked').text(crystalValue)
+      $('#number-to-guess').text(myNum);
+      $('#num_u_clicked').text(crystalValue);
           targetNumcal();
     });
   
