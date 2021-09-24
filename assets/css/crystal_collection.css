@@ -89,6 +89,7 @@ header {
         height:70px;
         margin:10px 10px;
         font-size: 1.15em;
+        font-weight: bold;
      }
   }
 
@@ -107,6 +108,7 @@ header {
         height:60px;
         margin: 10px 10px;
         font-size: 1em;
+        font-weight: bold;
      }
   }
   
