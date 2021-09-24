@@ -1,0 +1,73 @@
+body {
+    background: url("../images/crystal-background.jpg");
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    padding-top: 50px;
+    margin: auto;
+    height: 150px;
+    text-align: center;
+    font-size: 3.5em;
+    color: darkslateblue;
+}
+
+
+.crystal_img {
+    height: 125px;
+    width:  125px;
+    margin: 40px 40px;
+}
+
+.crystal_img:hover {
+    cursor: pointer;
+    background: rgba(119, 51, 255 .5);
+}
+
+.card {
+    display: inline-block;
+    height: 125px;
+    width: 125px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    margin: 35px 35px;
+    font-size: 1.25em;
+    color: darkviolet;
+}
+
+@media screen and (max-width: 980px) {  
+    header{
+        font-size: 2em;
+    }
+    .crystal_img {
+        width:60px;
+        height:60px;
+        margin:15px 15px;
+     }
+    .card {
+        width:60px;
+        height:60px;
+        margin:15px 15px;
+        font-size: 1.5em;
+     }
+  }
+
+
+@media screen and (max-width: 680px) {  
+    header{
+        font-size: 1.5em;
+    }
+    .crystal_img {
+        width:50px;
+        height:50px;
+        margin: 10px 10px;
+     }
+     .card {
+        width:50px;
+        height:50px;
+        margin: 10px 10px;
+        font-size: .5em;
+     }
+  }
+  

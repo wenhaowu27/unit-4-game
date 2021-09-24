@@ -1,18 +1,34 @@
 body {
     background: url("../images/crystal-background.jpg");
+    height: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
 header {
-    padding-top: 50px;
-    margin: auto;
-    height: 150px;
+    padding-top: 20px;
+    margin: 30px auto;
+    height: 100px;
     text-align: center;
     font-size: 3.5em;
     color: darkslateblue;
 }
 
+.footnote {
+    position: fixed;
+    top: 480px;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    /* font-size: large; */
+}
+
+.btn {
+    margin: 20px auto;
+}
 
 .crystal_img {
     height: 125px;
@@ -22,18 +38,41 @@ header {
 
 .crystal_img:hover {
     cursor: pointer;
-    background: rgba(119, 51, 255 .5);
+    /* background: rgba(119, 51, 255 .5); */
 }
 
+.card_img {
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0);
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, #1976d3 50%);
+    transition: background-position 0.1s, color 0.1s;
+    border: none;
+    margin: 35px 35px;
+    /* font-size: 1.25em; */
+    /* color: darkviolet; */
+}
 .card {
-    display: inline-block;
-    height: 125px;
-    width: 125px;
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
     background: rgba(0, 0, 0, 0);
     border: none;
     margin: 35px 35px;
-    font-size: 1.25em;
-    color: darkviolet;
+    /* font-size: 1.25em; */
+    /* color: darkviolet; */
+}
+
+.card_img:hover {
+    background-position: 0% 100%;
+    color: #1976d3;
 }
 
 @media screen and (max-width: 980px) {  
